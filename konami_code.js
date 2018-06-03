@@ -12,8 +12,8 @@ const codes = [
 ];
 
 function init() {
-  // your code here
+
 for (let i = 0; i < codes.length - 1; i++) {
   return triggerKeyDown(codes[i]);
-}
+  }
 }
