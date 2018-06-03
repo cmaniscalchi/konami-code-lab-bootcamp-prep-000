@@ -13,21 +13,9 @@ const codes = [
 
 function init() {
   
-let index = 0
-
-function onKeyDownHandler(e) {
-  const key = e.key;
+  const sequence = [];
  
-  if (key === codes[index]) {
-    index++;
- 
-    if (index === codes.length) {
-      alert("Hurray!");
- 
-      index = 0;
-    }
-  } else {
-    index = 0;
-  }
+  for (let i = 0; i < codes.length - 1; i++) {
+  triggerKeyDown(codes[i])
 }
 }
