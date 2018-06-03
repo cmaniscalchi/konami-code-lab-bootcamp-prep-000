@@ -15,7 +15,7 @@ function init() {
   
   var index = 0;
   
-  document.addEventListener('triggerKeyDown');
+  document.addEventListener('keyDown');
  
  
   for (let i = 0; i < codes.length - 1; i++) {
