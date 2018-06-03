@@ -19,5 +19,6 @@ function init() {
  
  
   for (let i = 0; i < codes.length - 1; i++) {
+    index.push(codes[i]);
 }
 }
