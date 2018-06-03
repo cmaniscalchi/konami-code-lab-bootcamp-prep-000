@@ -16,6 +16,6 @@ function init() {
   const sequence = [];
  
   for (let i = 0; i < codes.length - 1; i++) {
-  triggerKeyDown(codes[i])
+  triggerKeyDown(codes[i]);
 }
 }
