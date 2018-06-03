@@ -15,26 +15,19 @@ function init() {
   
 let index = 0
 
-
-  for (let i = 0, l = codes.length; i < l; i++) {
-    triggerKeyDown(codes[i]);
+function onKeyDownHandler(e) {
+  const key = e.key;
+ 
+  if (key === codes[index]) {
+    index++;
+ 
+    if (index === codes.length) {
+      alert("Hurray!");
+ 
+      index = 0;
     }
-      expect(spy.called).to.equal(true)
-      expect(spy.callCount).to.equal(1)
-    });
-
-    it("does not trigger an alert if the wrong code is entered", () => {
-      spy.reset()
-
-      for (let i = 0; i < codes.length - 1; i++) {
-        triggerKeyDown(codes[i])
-      }
-      triggerKeyDown("ArrowUp")
-      
-      expect(spy.notCalled).to.equal(true);
-    });
-
-for (let i = 0; i < codes.length - 1; i++) {
-  return triggerKeyDown(codes[i]);
+  } else {
+    index = 0;
   }
+}
 }
