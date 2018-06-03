@@ -13,7 +13,7 @@ const codes = [
 
 function init() {
   
-  const sequence = [];
+  var index = 0;
  
   for (let i = 0; i < codes.length - 1; i++) {
   triggerKeyDown(codes[i]);
