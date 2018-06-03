@@ -14,15 +14,14 @@ const codes = [
 function init() {
   // your code here
 }
+spy.reset()
+for (let i = 0; i < codes.length - 1; i++) {
+  triggerKeyDown(codes[i])
+}
+triggerKeyDown("ArrowUp")
 
+expect(spy.notCalled).to.equal(true);
 
-
-const alphabet = ['a', 'b', 'c'];
- 
-// Keep track of index outside of the event handler.
-let index = 0;
- 
-// This is the function that would be invoked by the event listener.
 function onKeyDownHandler(e) {
   const key = e.key;
  
