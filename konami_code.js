@@ -10,6 +10,7 @@ const codes = [
   "b",
   "a"
 ];
+
 function init() {
 
 for (let i = 0; i < codes.length - 1; i++) {
