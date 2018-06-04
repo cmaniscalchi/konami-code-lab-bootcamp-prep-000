@@ -11,11 +11,6 @@ const codes = [
   "a"
 ];
 
-function triggerKeyDown(key) {
-    const keyboardEvent = new KeyboardEvent("keydown", { key });
-    document.body.dispatchEvent(keyboardEvent);
-  }
-
 function init() {
   
   let index = 0;
@@ -35,6 +30,5 @@ function init() {
     index = 0;
   }
 }
-
-  }
+document.body.addEventListener('keydown', onKeyDownHandler);
 }
