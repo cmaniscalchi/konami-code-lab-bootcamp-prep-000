@@ -19,17 +19,8 @@ function triggerKeyDown(key) {
 function init() {
   
   let index = 0;
-  
-  document.addEventListener('keydown', function(e)) {
-  alert('I was clicked!')
-};
- 
- 
-  for (let i = 0; i < codes.length - 1; i++) {
-    index.push(codes[i]);
-
     
-    function onKeyDownHandler(e) {
+  function onKeyDownHandler(e) {
   const key = e.key;
  
   if (key === codes[index]) {
