@@ -10,11 +10,17 @@ const codes = [
   "b",
   "a"
 ];
+
+function triggerKeyDown(key) {
+    const keyboardEvent = new KeyboardEvent("keydown", { key });
+    document.body.dispatchEvent(keyboardEvent);
+  }
+
 function init() {
   
   let index = 0;
   
-  document.addEventListener('keyDown', function(e)) {
+  document.addEventListener('keydown', function(e)) {
   alert('I was clicked!')
 };
  
