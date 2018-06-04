@@ -15,7 +15,9 @@ function init() {
   
   var index = 0;
   
-  document.addEventListener('keyDown' function(e));
+  document.addEventListener('keyDown', function(e)) {
+  alert('I was clicked!')
+};
  
  
   for (let i = 0; i < codes.length - 1; i++) {
